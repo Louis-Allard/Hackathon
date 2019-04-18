@@ -5,6 +5,7 @@ import Back from './Back';
 import axios from 'axios';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
     CardSubtitle, CardBody } from 'reactstrap'; 
+import "../cards.css";
 
 class Cards extends React.Component {
     constructor(props) {
@@ -41,9 +42,9 @@ class Cards extends React.Component {
                 ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
                 // if you pass isFlipped prop component will be controlled component.
                 // and other props, which will go to div
-                style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
+                style={{ width: '200px', height: '250px' }} /// these are optional style, it is not necessary
             >
-                <FrontSide>
+                <FrontSide className="imageFront">
                 <Front src={this.state.eggs} />
                 </FrontSide>
 
