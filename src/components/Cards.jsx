@@ -6,25 +6,30 @@ import axios from 'axios';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
     CardSubtitle, CardBody } from 'reactstrap'; 
 
-class Cards extends React.Component{
-    constructor(props){
+class Cards extends React.Component {
+    constructor(props) {
         super(props);
         this.state = {
-            eggs: []
+
+            eggs: ""
+
         }
     }
+
     componentDidMount() {
         axios.get('http://easteregg.wildcodeschool.fr/api/eggs/random')
-        .then (res => {
-            this.setState({
-              eggs : res.image  
+            .then(res => {
+                this.setState({
+                    eggs: res.data.image
+                });
             });
-        });
     }
+
     render() {
+
 	    return (
             <div className= "col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 mt-1 ">
-            
+
             <Flippy
                 flipOnClick={true} // default false
                 flipDirection="horizontal" // horizontal or vertical
@@ -34,11 +39,11 @@ class Cards extends React.Component{
                 style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
             >
                 <FrontSide>
-                    <Front/>
+                <Front src={this.state.eggs} />
                 </FrontSide>
 
                 <BackSide>
-                    <Back/>          
+                    <Back src={this.state.eggs} />
                 </BackSide>
             </Flippy>
             
