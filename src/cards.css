@@ -3,8 +3,8 @@ border : 5px solid black;
 border-radius: 1ex;
 background-image: linear-gradient( purple , darkblue);
 cursor: pointer;
-width: 20rem;
- height: 30rem;
+width: 18rem;
+height: 30rem;
 justify-content: center;
 margin-left : 2rem;
 }
@@ -15,16 +15,16 @@ margin-left : 2rem;
 
 img.eggImg {
     margin-top : 5rem;
-    width : 15rem;
+    width : 13rem;
 }
 
 img.charaImg {
-    width : 18rem;
+    width : 16rem;
     height : 15rem;
 }
 .characterName {
     background-color : whitesmoke;
-    width : 17rem;
+    width : 15rem;
     height : 3rem;
     font-size: 1.3rem;
     text-transform: capitalize ;
@@ -32,7 +32,7 @@ img.charaImg {
 .description {
     background-color : white ;
     margin-top : 2rem;
-    width : 17rem;
+    width : 15rem;
     height : 7.5rem;
     padding : 0, auto;
     font-size : 1rem;
