@@ -5,7 +5,7 @@ class Front extends React.Component{
         return(
 
             <div>
-                <img src={this.props.src} style={{ width: '150px' }} />
+                <img className="eggImg" src={this.props.src} />
             </div>
 
         )
