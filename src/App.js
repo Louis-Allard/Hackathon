@@ -3,11 +3,27 @@ import FaceVisible from "./FaceVisible";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Galerie from './components/Galerie';
+import Var from './components/var'
+const EasterEgg = require('react-easter');
 class App extends Component {
+  myFunction() {
+    
+    alert("VAR!")
+  } 
   render() {
+    const konamiCode = [
+      'v',
+      'a',
+      'r',
+      'enter'
+    ];
     return (
-      <div className="App">
 
+      <div className="App">
+      <EasterEgg keys={konamiCode}
+      >
+        <Var/>
+      </EasterEgg>
         <header className="App-header">
           <h1>Header</h1>
         </header>
@@ -17,6 +33,7 @@ class App extends Component {
         </footer>
 
       </div>
+
     );
   }
 }
