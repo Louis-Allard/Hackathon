@@ -10,7 +10,7 @@ margin-left : 2rem;
 }
 
 .description {
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 img.eggImg {
@@ -19,7 +19,7 @@ img.eggImg {
 }
 
 img.charaImg {
-    width : 16rem;
+    width : 15rem;
     height : 15rem;
 }
 .characterName {
@@ -31,7 +31,7 @@ img.charaImg {
 }
 .description {
     background-color : white ;
-    margin-top : 2rem;
+    margin-top : 1rem;
     width : 15rem;
     height : 7.5rem;
     padding : 0, auto;
