@@ -2,11 +2,24 @@ import React from 'react';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import Front from './Front';
 import Back from './Back';
-
+import axios from 'axios';
 
 
 class Cards extends React.Component{
-
+    constructor(props){
+        super(props);
+        this.state = {
+            eggs= []
+        }
+    }
+    componentDidMount() {
+        axios.get('http://easteregg.wildcodeschool.fr/api/eggs/random')
+        .then (res => {
+            this.setState({
+              eggs : res.image  
+            });
+        });
+    }
     render() {
 	    return (
             <Flippy
