@@ -11,8 +11,8 @@ class Galerie extends React.Component {
   render() {
     return (
 
-      <CardDeck>
-        <div className ="row mr-2 ml-2">       
+      <CardDeck >
+        <div className ="row mr-2 ml-2 mt-2">       
           {data.map((film, idx) => {
           return (
             <Cards/> 
