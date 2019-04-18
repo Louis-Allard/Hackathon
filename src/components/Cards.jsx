@@ -14,9 +14,17 @@ class Cards extends React.Component {
             eggs: "",
             character : "",
             name :"",
-            skills :[],
+            skills :[]
         }
+        this.handleClick = this.handleClick.bind(this);
     }
+
+    calc(values) {
+        return values.reduce((acc, currentValue) => {
+            return acc + Number.parseInt(currentValue.split(':')[1]);
+        }, 0);
+     }
+    
 
     componentDidMount() {
         axios.get('http://easteregg.wildcodeschool.fr/api/eggs/random')
@@ -26,20 +34,26 @@ class Cards extends React.Component {
                 });
             });
         axios.get('http://easteregg.wildcodeschool.fr/api/characters/random')
-            .then(res2 => {
+            .then(res => {
+
+                const generateValue = this.calc(res.data.skills);
                 this.setState({
-                    character: res2.data.image,
-                    name: res2.data.name,
-                    skills: res2.data.skills
+                    character: res.data.image,
+                    name: res.data.name,
+                    skills: res.data.skills,
+                    result: generateValue
                 });
-            });
+
+            })
+             
     }
-
+    handleClick() {
+       alert (this.state.result);
+      }
     render() {
-
 	    return (
-            <div className= "col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 mt-1 ">
-
+            <div className= "col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 mt-1" onClick={this.handleClick}>
+            
             <Flippy
                 flipOnClick={true} // default false
                 flipDirection="horizontal" // horizontal or vertical
@@ -57,7 +71,9 @@ class Cards extends React.Component {
                     character= {this.state.character}
                     name={this.state.name}
                     skills={this.state.skills}
+                    
                      />
+                     
                 </BackSide>
             </Flippy>
             
