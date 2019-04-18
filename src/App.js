@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Galerie from './components/Galerie';
 class App extends Component {
   render() {
     return (
@@ -8,7 +9,7 @@ class App extends Component {
         <header className="App-header">
           <h1>Header</h1>
         </header>
-
+        <Galerie/>
         <footer className="Footer"> 
           <p>footer</p>
         </footer>
