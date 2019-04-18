@@ -9,7 +9,8 @@ class Cards extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            eggs: ""
+            eggs: "",
+            character : {}
         }
     }
 
@@ -20,10 +21,16 @@ class Cards extends React.Component {
                     eggs: res.data.image
                 });
             });
+        axios.get('http://easteregg.wildcodeschool.fr/api/characters/random')
+            .then(res2 => {
+                this.setState({
+                    character: res2.data
+                });
+            });
     }
 
     render() {
-        // console.log(this.state.eggs);
+         console.log(this.state.character);
         return (
             <Flippy
                 flipOnClick={true} // default false
@@ -38,7 +45,7 @@ class Cards extends React.Component {
                 </FrontSide>
 
                 <BackSide>
-                    <Back src={this.state.eggs} />
+                    <Back character= {this.state.character} />
                 </BackSide>
             </Flippy>
         )
