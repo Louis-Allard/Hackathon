@@ -10,8 +10,8 @@ class Cards extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            eggs: ""
-
+            eggs: "",
+            character : {}
         }
     }
 
@@ -20,6 +20,12 @@ class Cards extends React.Component {
             .then(res => {
                 this.setState({
                     eggs: res.data.image
+                });
+            });
+        axios.get('http://easteregg.wildcodeschool.fr/api/characters/random')
+            .then(res2 => {
+                this.setState({
+                    character: res2.data
                 });
             });
     }
@@ -42,7 +48,7 @@ class Cards extends React.Component {
                 </FrontSide>
 
                 <BackSide>
-                    <Back src={this.state.eggs} />
+                    <Back character= {this.state.character} />
                 </BackSide>
             </Flippy>
             
