@@ -3,13 +3,16 @@ import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import Front from './Front';
 import Back from './Back';
 import axios from 'axios';
-
+import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
+    CardSubtitle, CardBody } from 'reactstrap'; 
 
 class Cards extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+
             eggs: ""
+
         }
     }
 
@@ -23,8 +26,10 @@ class Cards extends React.Component {
     }
 
     render() {
-        // console.log(this.state.eggs);
-        return (
+
+	    return (
+            <div className= "col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 mt-1 ">
+
             <Flippy
                 flipOnClick={true} // default false
                 flipDirection="horizontal" // horizontal or vertical
@@ -41,6 +46,8 @@ class Cards extends React.Component {
                     <Back src={this.state.eggs} />
                 </BackSide>
             </Flippy>
+            
+            </div>
         )
     }
 }
