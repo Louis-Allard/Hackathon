@@ -1,5 +1,5 @@
 import React from "react";
-import Oeuf from "./Oeuf";
+import Cards from "./Cards";
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
   CardSubtitle, CardBody } from 'reactstrap';
 
@@ -15,7 +15,7 @@ class Galerie extends React.Component {
         <div className ="row mr-2 ml-2">       
           {data.map((film, idx) => {
           return (
-            <Oeuf/>
+            <Cards/> 
           );
         })}
         </div>        
