@@ -1,11 +1,42 @@
 .imageFront {
 border : 5px solid black;
 border-radius: 1ex;
-background-image: linear-gradient(red, yellow);
-height: 260px;
+background-image: linear-gradient( purple , darkblue);
 cursor: pointer;
+width: 20rem;
+ height: 30rem;
+justify-content: center;
+margin-left : 2rem;
 }
 
 .description {
     font-size: 12px; 
+}
+
+img.eggImg {
+    margin-top : 5rem;
+    width : 15rem;
+    background-color: white;
+}
+
+img.charaImg {
+    width : 18rem;
+    height : 15rem;
+}
+.characterName {
+    background-color : whitesmoke;
+    width : 17rem;
+    height : 3rem;
+    font-size: 1.3rem;
+    text-transform: capitalize ;
+}
+.description {
+    background-color : white ;
+    margin-top : 2rem;
+    width : 17rem;
+    height : 7.5rem;
+    padding : 0, auto;
+    font-size : 1rem;
+    text-transform : capitalize;
+    font-weight: bold ;
 }

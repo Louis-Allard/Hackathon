@@ -38,7 +38,7 @@ class Cards extends React.Component {
     render() {
 
 	    return (
-            <div className= "col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 mt-1 ">
+            <div>
 
             <Flippy
                 flipOnClick={true} // default false
@@ -46,7 +46,6 @@ class Cards extends React.Component {
                 ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
                 // if you pass isFlipped prop component will be controlled component.
                 // and other props, which will go to div
-                style={{ width: '200px', height: '250px' }} /// these are optional style, it is not necessary
             >
                 <FrontSide className="imageFront">
                 <Front src={this.state.eggs} />
