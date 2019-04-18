@@ -5,23 +5,26 @@ import Back from './Back';
 import axios from 'axios';
 
 
-class Cards extends React.Component{
-    constructor(props){
+class Cards extends React.Component {
+    constructor(props) {
         super(props);
         this.state = {
-            eggs= []
+            eggs: ""
         }
     }
+
     componentDidMount() {
         axios.get('http://easteregg.wildcodeschool.fr/api/eggs/random')
-        .then (res => {
-            this.setState({
-              eggs : res.image  
+            .then(res => {
+                this.setState({
+                    eggs: res.data.image
+                });
             });
-        });
     }
+
     render() {
-	    return (
+        // console.log(this.state.eggs);
+        return (
             <Flippy
                 flipOnClick={true} // default false
                 flipDirection="horizontal" // horizontal or vertical
@@ -31,11 +34,11 @@ class Cards extends React.Component{
                 style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
             >
                 <FrontSide>
-                    <Front/>
+                <Front src={this.state.eggs} />
                 </FrontSide>
 
                 <BackSide>
-                    <Back/>          
+                    <Back src={this.state.eggs} />
                 </BackSide>
             </Flippy>
         )
