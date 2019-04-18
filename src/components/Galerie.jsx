@@ -3,7 +3,7 @@ import Cards from "./Cards";
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
   CardSubtitle, CardBody } from 'reactstrap';
 
-const data = ["","","","","","","","","","","","","","",""]
+const data = ["","","","",""]
 
 
 
@@ -18,7 +18,14 @@ class Galerie extends React.Component {
             <Cards/> 
           );
         })}
-        </div>        
+        </div>     
+        <div className ="row mr-2 ml-2 mt-2">       
+          {data.map((film, idx) => {
+          return (
+            <Cards/> 
+          );
+        })}
+        </div> 
       </CardDeck>
   
     );
