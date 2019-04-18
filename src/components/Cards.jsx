@@ -11,7 +11,9 @@ class Cards extends React.Component {
         super(props);
         this.state = {
             eggs: "",
-            character : {}
+            character : "",
+            name :"",
+            skills :[],
         }
     }
 
@@ -25,7 +27,9 @@ class Cards extends React.Component {
         axios.get('http://easteregg.wildcodeschool.fr/api/characters/random')
             .then(res2 => {
                 this.setState({
-                    character: res2.data
+                    character: res2.data.image,
+                    name: res2.data.name,
+                    skills: res2.data.skills
                 });
             });
     }
@@ -48,7 +52,11 @@ class Cards extends React.Component {
                 </FrontSide>
 
                 <BackSide>
-                    <Back character= {this.state.character} />
+                    <Back 
+                    character= {this.state.character}
+                    name={this.state.name}
+                    skills={this.state.skills}
+                     />
                 </BackSide>
             </Flippy>
             
