@@ -52,7 +52,7 @@ class Cards extends React.Component {
                 <Front src={this.state.eggs} />
                 </FrontSide>
 
-                <BackSide>
+                <BackSide className="imageFront">
                     <Back 
                     character= {this.state.character}
                     name={this.state.name}
