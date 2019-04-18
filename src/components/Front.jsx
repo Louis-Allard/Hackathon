@@ -1,4 +1,5 @@
 import React from 'react';
+import "../cards.css";
 
 class Front extends React.Component{
     render(){

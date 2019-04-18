@@ -1,0 +1,7 @@
+.imageFront {
+border : 5px solid black;
+border-radius: 1ex;
+background-image: linear-gradient(red, yellow);
+height: 250px;
+cursor: pointer;
+}
