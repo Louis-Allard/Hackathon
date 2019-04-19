@@ -15,7 +15,10 @@ class Cards extends React.Component {
             eggs: "",
             character : "",
             name :"",
-            skills :[]
+            skills :[],
+            j1 : 0,
+            j2 : 0
+
         }
         this.handleClick = this.handleClick.bind(this);
     }
@@ -51,12 +54,24 @@ class Cards extends React.Component {
     
     handleClick() {
        //alert (this.state.result);
-       const j1 = this.state.result;
+       this.state.j1!='0'?this.setState.j2 = this.set.result : this.setState.j1 = this.state.result;
+
+        if (this.state.j1 > this.state.j2) {
+           return alert("J1 gagne");
+        }
+        if(this.state.j1 < this.state.j2){
+           return alert("J2 Gagne");
+        }
+        if(this.state.j1 === this.state.j2){
+           return alert("Egalité"); 
+        }
+             
       }
     render() {
 	    return (
             <div className= "col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 mt-1" onClick={this.handleClick}>
-            
+            <p>{this.state.j1}</p>
+            <p>{this.state.j2}</p>
             <Flippy
                 flipOnClick={true} // default false
                 flipDirection="horizontal" // horizontal or vertical
