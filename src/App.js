@@ -39,7 +39,7 @@ class App extends Component {
       'v',
       'a',
       'r',
-      'enter'
+      
     ];
     const konamiCode = [
       'arrowup',
@@ -52,7 +52,7 @@ class App extends Component {
       'arrowright',
       'b',
       'a',
-      'enter'
+      
     ];
     return (
 
