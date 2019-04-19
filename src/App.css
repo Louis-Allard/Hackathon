@@ -11,13 +11,14 @@
 }
 .title{
   font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  color: white;
 }
 .row{
   width: 100%;
   justify-content: center
 }
 .cards{
-  margin: 1%;
   margin-top: 10%;
 }
 .card-deck{

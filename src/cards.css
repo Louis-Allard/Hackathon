@@ -2,15 +2,18 @@
 border : 1px solid black;
 border-radius: 1ex;
 background-image: url('img/bg-card.png');
+background-color: white;
+object-fit: cover;
 background-position: center;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 cursor: pointer;
-width: 20rem;
-height: 30rem;
+width: 15rem;
+height: 25rem;
 justify-content: center;
-margin-left : 2rem;
+margin-left : 1rem;
+box-shadow: 5px 5px 5px black;
 }
 .energie{
     margin: -0.5rem;
@@ -21,12 +24,12 @@ margin-left : 2rem;
 
 img.eggImg {
     margin-top : 5rem;
-    width : 13rem;
+    width : 10rem;
 }
 
 img.charaImg {
-    width : 15rem;
-    height : 15rem;
+    width : 10rem;
+    height : 10rem;
     object-fit: cover;
     margin: 0%;
 }
@@ -41,6 +44,7 @@ img.charaImg {
 }
 .description {
     color: black;
+    text-align: left;
     width : 15rem;
     height : 7.5rem;
     padding : 0, auto;
@@ -48,3 +52,38 @@ img.charaImg {
     text-transform : capitalize;
     font-weight: bold ;
 }
+/*
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}*/

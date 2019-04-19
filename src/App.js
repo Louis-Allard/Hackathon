@@ -27,7 +27,7 @@ class App extends Component {
       </EasterEgg>
         <header className="App-header">
         <img src={haeder} alt="logo" />
-          <h1 className="title">EasterEgg figth</h1>
+          <h1 className="title">EasterEgg fight</h1>
         </header>
         <Galerie/>
         <footer className="Footer"> 
