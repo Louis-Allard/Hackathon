@@ -59,7 +59,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
         <img src={haeder} alt="logo" />
-          <h1>Header</h1>
+          <h1 className="title">EasterEgg fight</h1>
         </header>
         <EasterEgg keys={Loic}
       >
