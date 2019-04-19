@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Varimg from './Varimg.jpg'
 class Var extends React.Component {
+
       
     render() {
       return ( 
         <div >
-            {alert("VAR!")}
+            <img src={Varimg} className="loic"/>
          </div>
        )
     }
