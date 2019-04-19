@@ -73,10 +73,9 @@ class App extends Component {
         <EasterEgg keys={konamiCode}
         >
           <div class="overlay">
-            <iframe class="sexy-nude-geek-girls-playing-mario"
-              src="https://www.youtube.com/watch?v=OCiYLrrAl2oautoplay=1"
-              frameborder="0"
-              allowfullscreen />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-YCN-a0NsNk?rel=0&amp;autoplay=1" 
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
           </div>
       </EasterEgg>
       <EasterEgg keys={fin}
