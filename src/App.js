@@ -54,6 +54,11 @@ class App extends Component {
       'a',
       
     ];
+    const fin = [
+      'f',
+      'i',
+      'n'
+    ]
     return (
 
       <div className="App">
@@ -69,10 +74,14 @@ class App extends Component {
         >
           <div class="overlay">
             <iframe class="sexy-nude-geek-girls-playing-mario"
-              src="https://www.youtube.com/embed/DLzxrzFCyOs?autoplay=1"
+              src="https://www.youtube.com/watch?v=OCiYLrrAl2oautoplay=1"
               frameborder="0"
               allowfullscreen />
           </div>
+      </EasterEgg>
+      <EasterEgg keys={fin}
+      >
+        <img src='https://media.giphy.com/media/IOCXHPvn3WErm/giphy.gif' />
       </EasterEgg>
         <Compte />
         {this.state.showChild ?
