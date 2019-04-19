@@ -45,8 +45,10 @@ class Galerie extends React.Component {
         </CardDeck>
         </div>
       </div>
-      <Button
+     
+      <Button className="mt-2"
       onClick={this.onButtonClick}>Nouvelle manche</Button>
+    
        <div className="container-fluid  ">
        <div className="row justify-content-center">
         <CardDeck >   

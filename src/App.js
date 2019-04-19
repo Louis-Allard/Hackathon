@@ -47,7 +47,7 @@ class App extends Component {
         <Var/>
       </EasterEgg>
         <header className="App-header">
-          <h1>Header</h1>
+          <h1>Egg's Card Game</h1>
         </header>
         <Compte/>
         {this.state.showChild?
