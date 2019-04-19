@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FaceVisible from "./FaceVisible";
 import './App.css';
+import haeder from "./img/haeder.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Galerie from './components/Galerie';
 import Var from './components/var'
@@ -48,6 +49,7 @@ class App extends Component {
         <Var/>
       </EasterEgg>
         <header className="App-header">
+        <img src={haeder} alt="logo" />
           <h1>Header</h1>
         </header>
         <Compte />
