@@ -33,7 +33,7 @@ class App extends Component {
       console.log("Reload Child Invoked")
   }
   render() {
-    const Var = [
+    const konamiCode = [
       'v',
       'a',
       'r',
@@ -42,7 +42,7 @@ class App extends Component {
     return (
 
       <div className="App">
-        <EasterEgg keys={Var}
+        <EasterEgg keys={konamiCode}
         >
           <Var />
         </EasterEgg>

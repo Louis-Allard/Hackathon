@@ -30,8 +30,8 @@ class Galerie extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="container-fluid  ">
+      <div className="Gallerie">
+        <div className="container-fluid ">
           <div className="row  justify-content-center">
             <CardDeck className="">
               <div className=" row  mt-2 ">

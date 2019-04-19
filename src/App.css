@@ -4,7 +4,7 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #af7c30;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -21,9 +21,13 @@
 .Footer{
 
   width:100%;
-  background-color: #282c34;
+  background-color: #af7c30;
   min-height: 6vh;
   color: white;
   align-items: center;
   justify-content: center;
 }
+
+/*.Gallerie{
+  background-color: rgb(122, 248, 185)
+}*/
