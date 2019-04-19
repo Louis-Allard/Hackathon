@@ -35,23 +35,45 @@ class App extends Component {
   } 
 
   render() {
-    const konamiCode = [
+    const Loic = [
       'v',
       'a',
       'r',
       'enter'
     ];
+    const konamiCode = [
+      'arrowup',
+      'arrowup',
+      'arrowdown',
+      'arrowdown',
+      'arrowleft',
+      'arrowright',
+      'arrowleft',
+      'arrowright',
+      'b',
+      'a',
+      'enter'
+    ];
     return (
 
       <div className="App">
-      <EasterEgg keys={konamiCode}
-      >
-        <Var/>
-      </EasterEgg>
         <header className="App-header">
         <img src={haeder} alt="logo" />
           <h1>Header</h1>
         </header>
+        <EasterEgg keys={Loic}
+      >
+        <Var/>
+      </EasterEgg>
+        <EasterEgg keys={konamiCode}
+        >
+          <div class="overlay">
+            <iframe class="sexy-nude-geek-girls-playing-mario"
+              src="https://www.youtube.com/embed/DLzxrzFCyOs?autoplay=1"
+              frameborder="0"
+              allowfullscreen />
+          </div>
+      </EasterEgg>
         <Compte />
         {this.state.showChild ?
           <Galerie reloadChild={this.reloadChild} /> : null
