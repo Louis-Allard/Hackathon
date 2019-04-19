@@ -4,6 +4,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Galerie from './components/Galerie';
 import Var from './components/var'
+import Compte from './components/compte'
 const EasterEgg = require('react-easter');
 class App extends Component {
 
@@ -49,6 +50,7 @@ class App extends Component {
         <header className="App-header">
           <h1>Header</h1>
         </header>
+        <Compte />
         {this.state.showChild ?
           <Galerie reloadChild={this.reloadChild} /> : null
         }
