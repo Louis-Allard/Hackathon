@@ -79,7 +79,7 @@ class App extends Component {
           <Galerie reloadChild={this.reloadChild} /> : null
         }
         <footer className="Footer"> 
-          <p>footer</p>
+          <p>Made with ❤️ by Wild Code School</p>
         </footer>
 
       </div>
