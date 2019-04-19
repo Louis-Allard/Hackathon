@@ -5,33 +5,81 @@ import haeder from "./img/haeder.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Galerie from './components/Galerie';
 import Var from './components/var'
+import Compte from './components/compte'
 const EasterEgg = require('react-easter');
 class App extends Component {
-  myFunction() {
+
+  constructor(props) {
+    super(props);
+    this.state ={
+      showChild : true
+    }
+  }
+
+  componentDidMount() {
+      console.log('Parent Mounted');
+  }
+
+  reloadChild = () => {
+      this.setState({
+        showChild : false
+      })
     
-    alert("VAR!")
+      setTimeout(() => {
+        this.setState({
+          showChild : true
+        })
+      },100);
+
+      console.log("Reload Child Invoked")
   } 
+
   render() {
-    const konamiCode = [
+    const Loic = [
       'v',
       'a',
       'r',
-      'enter'
+      
+    ];
+    const konamiCode = [
+      'arrowup',
+      'arrowup',
+      'arrowdown',
+      'arrowdown',
+      'arrowleft',
+      'arrowright',
+      'arrowleft',
+      'arrowright',
+      'b',
+      'a',
+      
     ];
     return (
 
       <div className="App">
-      <EasterEgg keys={konamiCode}
-      >
-        <Var/>
-      </EasterEgg>
         <header className="App-header">
         <img src={haeder} alt="logo" />
           <h1 className="title">EasterEgg fight</h1>
         </header>
-        <Galerie/>
+        <EasterEgg keys={Loic}
+      >
+        <Var/>
+      </EasterEgg>
+        <EasterEgg keys={konamiCode}
+        >
+          <div class="overlay">
+            <iframe class="sexy-nude-geek-girls-playing-mario"
+              src="https://www.youtube.com/embed/DLzxrzFCyOs?autoplay=1"
+              frameborder="0"
+              allowfullscreen />
+          </div>
+      </EasterEgg>
+        <Compte />
+        {this.state.showChild ?
+          <Galerie reloadChild={this.reloadChild} /> : null
+        }
         <footer className="Footer"> 
-          <p>footer</p>
+          <p>Made with ❤️ by Wild Code School</p>
         </footer>
 
       </div>

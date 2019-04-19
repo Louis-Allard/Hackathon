@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
+import Varimg from './Varimg.jpg'
 class Var extends React.Component {
-  
-  myFunction() {
-    
-    alert("VAR!")
-  } 
 
-    
+      
     render() {
       return ( 
         <div >
-            {this.myFunction()}
+            <img src={Varimg} className="loic"/>
          </div>
        )
     }
@@ -18,5 +14,6 @@ class Var extends React.Component {
   
   
   }
-  export default Var
+  
+  export default Var;
   
