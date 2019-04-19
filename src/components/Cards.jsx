@@ -7,6 +7,7 @@ import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
     CardSubtitle, CardBody } from 'reactstrap'; 
 import "../cards.css";
 
+
 class Cards extends React.Component {
     constructor(props) {
         super(props);
@@ -47,8 +48,10 @@ class Cards extends React.Component {
             })
              
     }
+    
     handleClick() {
-       alert (this.state.result);
+       //alert (this.state.result);
+       const j1 = this.state.result;
       }
     render() {
 	    return (
