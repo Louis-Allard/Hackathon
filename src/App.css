@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 .App {
   margin:0;
   padding:0;
@@ -8,7 +9,9 @@
   background-position: top;
   background-size: cover;
 }
-
+.title{
+  font-family: 'Orbitron', sans-serif;
+}
 .row{
   width: 100%;
   justify-content: center
@@ -22,7 +25,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('img/bg-header.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
