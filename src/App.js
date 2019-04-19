@@ -6,9 +6,29 @@ import Galerie from './components/Galerie';
 import Var from './components/var'
 const EasterEgg = require('react-easter');
 class App extends Component {
-  myFunction() {
+  constructor(props) {
+    super(props);
+    this.state ={
+      showChild : true
+    }
+  }
+
+  componentDidMount() {
+      console.log('Parent Mounted');
+  }
+
+  reloadChild = () => {
+      this.setState({
+        showChild : false
+      })
     
-    alert("VAR!")
+      setTimeout(() => {
+        this.setState({
+          showChild : true
+        })
+      },100);
+
+      console.log("Reload Child Invoked")
   } 
   render() {
     const konamiCode = [
@@ -27,7 +47,9 @@ class App extends Component {
         <header className="App-header">
           <h1>Header</h1>
         </header>
-        <Galerie/>
+        {this.state.showChild ?
+          <Galerie reloadChild={this.reloadChild} /> : null
+        }
         <footer className="Footer"> 
           <p>footer</p>
         </footer>

@@ -8,9 +8,27 @@ const data = ["","","","",""]
 
 
 class Galerie extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount(){
+    console.log('Child component Mounted');
+  }
+
+  componentWillUnmount(){
+    console.log('Child Component Unmounted');
+  }
+
+  onButtonClick = () => {
+    console.log("Button Clicked")
+    this.props.reloadChild();
+  }
   render() {
     return (
-
+      <div>
+      <Button className="mt-2"
+      onClick={this.onButtonClick}>Nouvelle manche</Button>
       <CardDeck >
         <div className ="row mr-2 ml-2 mt-2">       
           {data.map((i, idx) => {
@@ -27,6 +45,8 @@ class Galerie extends React.Component {
         })}
         </div> 
       </CardDeck>
+      </div>
+      
   
     );
   }
