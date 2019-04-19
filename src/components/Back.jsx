@@ -2,12 +2,12 @@ import React from 'react';
 import "../cards.css";
 
 class Back extends React.Component{
-    render(){
-        return(
+    render() {
+        return (
             <div>
-            <p className = "card-title"> {this.props.name} </p>
-            <img className = "card-img img-fluid character" src={this.props.character} />
-            <img className = "card-img img-fluid character" src={this.props.image} />
+                <p className="card-title"> {this.props.name} </p>
+                <img className="card-img img-fluid character" src={this.props.character} />
+                <img className="card-img img-fluid character" src={this.props.image} />
             </div>
         )
     }

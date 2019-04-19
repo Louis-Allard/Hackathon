@@ -33,7 +33,7 @@ class App extends Component {
       console.log("Reload Child Invoked")
   }
   render() {
-    const konamiCode = [
+    const Var = [
       'v',
       'a',
       'r',
@@ -42,18 +42,18 @@ class App extends Component {
     return (
 
       <div className="App">
-      <EasterEgg keys={konamiCode}
-      >
-        <Var/>
-      </EasterEgg>
+        <EasterEgg keys={Var}
+        >
+          <Var />
+        </EasterEgg>
         <header className="App-header">
           <h1>Egg's Card Game</h1>
         </header>
-        <Compte/>
-        {this.state.showChild?
-          <Galerie reloadChild={this.reloadChild}/> : null
+        <Compte />
+        {this.state.showChild ?
+          <Galerie reloadChild={this.reloadChild} /> : null
         }
-        <footer className="Footer"> 
+        <footer className="Footer">
           <p>footer</p>
         </footer>
 

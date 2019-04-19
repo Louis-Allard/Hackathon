@@ -31,38 +31,37 @@ class Galerie extends React.Component {
   render() {
     return (
       <div>
-     <div className="container-fluid  ">
-       <div className="row  justify-content-center">
-      <CardDeck className="">
-        
-        <div className =" row  mt-2 ">       
-          {data.map((i, idx) => {
-          return (
-            <Cards/> 
-          );
-        })}
+        <div className="container-fluid  ">
+          <div className="row  justify-content-center">
+            <CardDeck className="">
+              <div className=" row  mt-2 ">
+                {data.map((i, idx) => {
+                  return (
+                    <Cards />
+                  );
+                })}
+              </div>
+            </CardDeck>
+          </div>
         </div>
-        </CardDeck>
+
+        <Button className="mt-2"
+          onClick={this.onButtonClick}>Nouvelle manche</Button>
+
+        <div className="container-fluid  ">
+          <div className="row justify-content-center">
+            <CardDeck >
+              <div className="row  mt-2">
+                {data.map((i) => {
+                  return (
+                    <Cards />
+                  );
+                })}
+              </div>
+
+            </CardDeck>
+          </div>
         </div>
-      </div>
-     
-      <Button className="mt-2"
-      onClick={this.onButtonClick}>Nouvelle manche</Button>
-    
-       <div className="container-fluid  ">
-       <div className="row justify-content-center">
-        <CardDeck >   
-        <div className ="row  mt-2">       
-          {data.map((i, idx) => {
-          return (
-            <Cards/> 
-          );
-        })}
-        </div> 
-        
-      </CardDeck>
-      </div>
-      </div>
       </div>
     );
   }
