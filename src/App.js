@@ -6,10 +6,8 @@ import Galerie from './components/Galerie';
 import Var from './components/var'
 const EasterEgg = require('react-easter');
 class App extends Component {
-  myFunction() {
-    
-    alert("VAR!")
-  } 
+ 
+
   render() {
     const konamiCode = [
       'v',
