@@ -15,6 +15,7 @@ class Cards extends React.Component {
             character : "",
             name :"",
             skills :[],
+            image:"",
         }
     }
 
@@ -33,6 +34,12 @@ class Cards extends React.Component {
                     skills: res2.data.skills
                 });
             });
+        axios.get('https://deckofcardsapi.com/api/deck/new/draw/')
+            .then(res3 => {
+                this.setState({
+                    image: res3.data.cards.map(cards => cards.image),
+                });
+            });
     }
 
     render() {
@@ -47,15 +54,15 @@ class Cards extends React.Component {
                 // if you pass isFlipped prop component will be controlled component.
                 // and other props, which will go to div
             >
-                <FrontSide className="imageFront">
+                <FrontSide className="Card imageFront">
                 <Front src={this.state.eggs} />
                 </FrontSide>
 
-                <BackSide className="imageFront">
+                <BackSide className="Card imageFront ">
                     <Back 
-                    character= {this.state.character}
+                    image= {this.state.image}
+                    character={this.state.character}
                     name={this.state.name}
-                    skills={this.state.skills}
                      />
                 </BackSide>
             </Flippy>

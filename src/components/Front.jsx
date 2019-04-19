@@ -5,7 +5,7 @@ class Front extends React.Component{
         return(
 
             <div>
-                <img className="eggImg" src={this.props.src} />
+                <img className="card-img img-fluid" src={this.props.src} />
             </div>
 
         )

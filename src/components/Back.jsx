@@ -5,9 +5,9 @@ class Back extends React.Component{
     render(){
         return(
             <div>
-            <h1 className = "characterName"> {this.props.name} </h1>
-            <img className = "charaImg" src={this.props.character} />
-            <p className="description"><br/>{this.props.skills[0]}<br/>{this.props.skills[1]}<br/>{this.props.skills[2]} </p>
+            <p className = "card-title"> {this.props.name} </p>
+            <img className = "card-img img-fluid character" src={this.props.character} />
+            <img className = "card-img img-fluid character" src={this.props.image} />
             </div>
         )
     }
