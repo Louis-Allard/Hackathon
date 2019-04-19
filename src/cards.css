@@ -7,17 +7,16 @@ object-fit: cover;
 background-position: center;
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
 cursor: pointer;
 width: 15rem;
-height: 25rem;
+height: 21.5rem;
 justify-content: center;
 margin-left : 1rem;
 box-shadow: 5px 5px 5px black;
 }
 .energie{
-    margin-top: -0.5rem;
-    margin-right: -7em;
+    margin-top: -0.8rem;
+    margin-right: -4em;
     font-weight: bold;
     color: orangered;
 }
@@ -26,18 +25,19 @@ box-shadow: 5px 5px 5px black;
 }
 
 img.eggImg {
-    margin-top : 5rem;
+    margin-top : 3rem;
     width : 10rem;
 }
 
 img.charaImg {
-    width : 10rem;
-    height : 10rem;
-    object-fit: cover;
+    width : 8rem;
+    height : 9rem;
+    object-fit: scale-down;
     margin: 0%;
 }
 .characterName {
-    margin-top: 5%;
+    margin-left: -1rem;
+    margin-top: -6%;
     font-weight: bold;
     color: black;
     width : 15rem;
@@ -50,7 +50,7 @@ img.charaImg {
     text-align: left;
     width : 15rem;
     height : 7.5rem;
-    padding : 0, auto;
+    margin-top: -0.8rem;
     font-size : 1rem;
     text-transform : capitalize;
     font-weight: bold ;
