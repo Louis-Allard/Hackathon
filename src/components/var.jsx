@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 class Var extends React.Component {
-  
-  myFunction() {
-    
-    alert("VAR!")
-  } 
-
-    
+      
     render() {
       return ( 
         <div >
-            {this.myFunction()}
+            {alert("VAR!")}
          </div>
        )
     }
@@ -18,5 +12,6 @@ class Var extends React.Component {
   
   
   }
-  export default Var
+  
+  export default Var;
   

@@ -10,6 +10,7 @@
     "react-easter-egg": "^0.1.1",
     "react-flippy": "^0.1.2",
     "react-scripts": "2.1.8",
+    "react-simplert": "0.0.2",
     "reactstrap": "^8.0.0"
   },
   "scripts": {

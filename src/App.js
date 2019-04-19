@@ -6,6 +6,7 @@ import Galerie from './components/Galerie';
 import Var from './components/var'
 const EasterEgg = require('react-easter');
 class App extends Component {
+
   constructor(props) {
     super(props);
     this.state ={
@@ -30,6 +31,7 @@ class App extends Component {
 
       console.log("Reload Child Invoked")
   } 
+
   render() {
     const konamiCode = [
       'v',
