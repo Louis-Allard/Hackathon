@@ -1,14 +1,20 @@
 .imageFront {
-border : 5px solid black;
+border : 1px solid black;
 border-radius: 1ex;
-background-image: linear-gradient( purple , darkblue);
+background-image: url('img/bg-card.png');
+background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 cursor: pointer;
-width: 18rem;
+width: 20rem;
 height: 30rem;
 justify-content: center;
 margin-left : 2rem;
 }
-
+.energie{
+    margin: -0.5rem;
+}
 .description {
     font-size: 12px;
 }
@@ -21,17 +27,20 @@ img.eggImg {
 img.charaImg {
     width : 15rem;
     height : 15rem;
+    object-fit: cover;
+    margin: 0%;
 }
 .characterName {
-    background-color : whitesmoke;
+    margin-top: 5%;
+    font-weight: bold;
+    color: black;
     width : 15rem;
     height : 3rem;
     font-size: 1.3rem;
     text-transform: capitalize ;
 }
 .description {
-    background-color : white ;
-    margin-top : 1rem;
+    color: black;
     width : 15rem;
     height : 7.5rem;
     padding : 0, auto;

@@ -38,7 +38,7 @@ class Cards extends React.Component {
     render() {
 
 	    return (
-            <div>
+            <div className="cards">
 
             <Flippy
                 flipOnClick={true} // default false

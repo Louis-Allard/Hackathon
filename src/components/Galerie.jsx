@@ -12,14 +12,14 @@ class Galerie extends React.Component {
     return (
 
       <CardDeck >
-        <div className ="row mr-2 ml-2 mt-2">       
+        <div className ="row">       
           {data.map((i, idx) => {
           return (
             <Cards/> 
           );
         })}
         </div>     
-        <div className ="row mr-2 ml-2 mt-2">       
+        <div className ="row">       
           {data.map((i, idx) => {
           return (
             <Cards/> 

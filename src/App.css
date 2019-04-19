@@ -1,7 +1,25 @@
 .App {
+  margin:0;
+  padding:0;
   text-align: center;
+  background-image: url('img/bg-easter-eggs.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
+.row{
+  width: 100%;
+  justify-content: center
+}
+.cards{
+  margin: 1%;
+  margin-top: 10%;
+}
+.card-deck{
+  flex-flow: none;
+}
 
 .App-header {
   background-color: #282c34;
@@ -14,9 +32,7 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+
 
 .Footer{
 
